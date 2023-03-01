@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib> // enables rand() srand()
-#include <ctime>   // enables
+#include <ctime>   // enables random numbers at a given time
 
 using namespace std;
 //CSC 134

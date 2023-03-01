@@ -1,10 +1,14 @@
 #include <iostream>
+#include <cstdlib> // enables rand() srand()
+#include <ctime>   // enables
 
 using namespace std;
 //CSC 134
 // M4T2 - menus
 // Thomas Billian
 // 2/27/2023
+// Verson 2 -- started our character creator
+// for Thudd
 
 // menu functions
 void option_one(){
@@ -24,18 +28,26 @@ void option_one(){
 
 }
 void option_two(){
-    // sum five numbers
+    // dice roller
+    int d6_1, d6_2, d6_3; // 3 dice (6 sided)
+    int total; // 3d6
+    int
 }
 void option_three(){
-    //TODO: what does this even do
+    // sum and average of dice
+
+    // there is no option 4 function
 }
 int main()
 {
+    // display a menu
+    // have the user choose 1, 2, 3 ,4.
+    // do something based on the choice
 
     cout << "Welcome to the menu" << endl;
     cout << "Press 1 to count" << endl;
-    cout << "Press 2 to sum up numbers" << endl;
-    cout << "Press 3 to TODO" << endl; // not implemented yet
+    cout << "Press 2 to roll dice" << endl;
+    cout << "Press 3 to roll a character" << endl; // not implemented yet
     cout << "Choice: ";
     // print three line menu
     //press 1 to blah etc
@@ -45,7 +57,7 @@ int main()
     cin >> choice;
     // user must pick 1, 2, or 3
     while (choice < 1 || choice > 3){
-        cout << "Please choose 1, 2, or 3: ";
+        cout << "Please choose 1, 2, 3, 4: ";
         cin >> choice;
     }
     if (choice == 1){
